@@ -1,9 +1,10 @@
 import discord
 from discord.ext import commands
 from news_update import fetch_ir, alt_fetch_ir
+import os
 
 #Bot token
-bot_token = 'MTA3ODY3MzI3MzgwNzcyMDY0NQ.G7KgNZ.IG1BxkMwXgtPR8Z-SJXtcWMS6p1aHOeyzm1dHg'
+token = os.environ.get('BOT_TOKEN')
 
 #Set up bot
 intents = discord.Intents.all()
@@ -16,7 +17,7 @@ net_default = 'https://'
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game(name='Money Never Sleeps'))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.watching, name='Money Never Sleeps'))
 
 @bot.command(name='안녕')
 async def Hi(ctx):
@@ -98,4 +99,4 @@ async def NVIDIA(ctx):
 #     await ctx.send(f'{date}\n{title}\n{link}')
 #     await bot.process_commands(ctx)
 
-bot.run(bot_token)
+bot.run(os.environ[token])

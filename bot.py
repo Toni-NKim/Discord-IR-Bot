@@ -99,4 +99,4 @@ async def NVIDIA(ctx):
 #     await ctx.send(f'{date}\n{title}\n{link}')
 #     await bot.process_commands(ctx)
 
-bot.run(os.environ.get[token])
+bot.run(token)

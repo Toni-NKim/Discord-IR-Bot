@@ -1,0 +1,4 @@
+discord.py
+urllib.requests
+bs4
+scrapy

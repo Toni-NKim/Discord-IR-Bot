@@ -21,7 +21,7 @@ async def on_ready():
 
 @bot.command(name='안녕')
 async def Hi(ctx):
-    await ctx.send('```안녕하세요. 저는 IR 자료를 긁어와 보여주는 봇입니다. 기업명 앞에 $를 붙이고 메시지를 보내보세요.```')
+    await ctx.send('```안녕하세요. 저는 IR 자료를 긁어와 보여주는 봇입니다. 기업명 앞에 $를 붙이고 메시지를 보내보세요. [엔비디아, 루시드, 조비]```')
     await bot.process_commands(ctx) 
 
 #Fetch Joby News

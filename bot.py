@@ -3,7 +3,7 @@ from discord.ext import commands
 from news_update import fetch_ir, alt_fetch_ir
 
 #Bot token
-bot_token = 'MTA3ODY3MzI3MzgwNzcyMDY0NQ.GQihde.t4Sq4Xwfc9yUDtLXZM7pjiTt4UEC12R3uug3cA'
+bot_token = 'MTA3ODY3MzI3MzgwNzcyMDY0NQ.G7KgNZ.IG1BxkMwXgtPR8Z-SJXtcWMS6p1aHOeyzm1dHg'
 
 #Set up bot
 intents = discord.Intents.all()

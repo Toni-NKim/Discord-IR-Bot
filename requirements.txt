@@ -1,4 +1,4 @@
 git+https://github.com/Rapptz/discord.py
-urllib.requests
+urllib
 bs4
 scrapy
